@@ -24,6 +24,15 @@ public class UserController {
     public List<user> list(){
         return userJPA.findAll();
     }
+	
+	 /**
+     * 许冲测试Git
+     * @return
+     */
+    @RequestMapping(value = "/list",method = RequestMethod.GET)
+    public List<user> list(){
+        return userJPA.findAll();
+    }
 
     @RequestMapping(value = "/save",method = RequestMethod.GET)
     public user save(user entity){
