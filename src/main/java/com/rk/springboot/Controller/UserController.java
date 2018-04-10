@@ -17,7 +17,7 @@ public class UserController {
     private UserJPA userJPA;
 
     /**
-     * 查询列表
+     * 查询列表  （）许冲整小样看
      * @return
      */
     @RequestMapping(value = "/list",method = RequestMethod.GET)
@@ -29,10 +29,7 @@ public class UserController {
      * 11111111111
      * @return
      */
-    @RequestMapping(value = "/list",method = RequestMethod.GET)
-    public List<user> list(){
-        return userJPA.findAll();
-    }
+
 
     @RequestMapping(value = "/save",method = RequestMethod.GET)
     public user save(user entity){
